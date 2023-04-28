@@ -36,8 +36,7 @@ body {
   
   .header {
     width: 100%;
-    background-color: #161515;
-    border-bottom: #DC0E0C 4px solid;
+    background-color: transparent;
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -71,7 +70,6 @@ body {
   }
   
   .header a {
-    background-color: #161515;
     padding: 5px;
     font-size: larger;
     text-shadow: #111, #00ff00, #DC0E0C;
