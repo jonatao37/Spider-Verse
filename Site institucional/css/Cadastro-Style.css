@@ -1,66 +1,21 @@
 body {
   font-family: sans-serif;
-  background-image: url(https://conteudo.imguol.com.br/c/entretenimento/6b/2018/01/04/homem-aranha-no-aranhaverso-1515087799821_v2_1920x1080.png);
+  background-image: url(../img/homem-aranha-no-aranhaverso-background.png);
   background-attachment: fixed;
   margin: 0;
   width: 100%;
-  background-size: contain;
-}
-
-/* Começo da navbar */
-
-.hero-container {
-  position: relative;
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero {
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  color: #DC0E0C;
-  margin-left: 8px;
-  /* Coisas brilhantes em ambientes escuros geralmente lançam essa luz, emitindo um brilho*/
-  filter: drop-shadow(0 1px 3px);
-}
-
-.container-header {
-  display: flex;
-  width: 90%;
-  margin: auto;
-}
-
-.header {
-  width: 100%;
-  background-color: #161515;
-  border-bottom: #DC0E0C 4px solid;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.header .container-header {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header img {
-  width: 70px;
-  height: 80px;
-  margin-left: 45px;
-
+  background-size: 90%;
+  
 }
 
 .NavBar {
-  width: 200px;
+  width: 80%;
   display: flex;
   color: #DC0E0C;
   list-style: none;
-  justify-content: space-around;
-  align-items: end;
-  margin-left: 650px;
+  justify-content: space-evenly;
+  align-items: center;
+   
 }
 
 a {
@@ -68,15 +23,6 @@ a {
   color: #DC0E0C;
 
 }
-
-.header a {
-  background-color: #161515;
-  padding: 5px;
-  font-size: larger;
-  text-shadow: #111, #00ff00, #DC0E0C;
-}
-
-/* Fim da Navbar */
 
 /* Codigo do Glitch */
 
@@ -394,26 +340,27 @@ a {
     font 7s step-end infinite, movement 8s step-end infinite;
 }
 
-/* Fim do codigo do glitch */
+/* Fim do codigo do glitchs */
 
 .cadastro-container {
 
   display: flex;
   width: 100%;
   justify-content: end;
+  align-items: end;
 
 }
 
 .cadastro {
 
-  background-color: #16161e;
+  background-color: black;
   width: 50%;
-
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: center;
   text-align: center;
+  border-left: #DC0E0C 3px solid; 
 
 }
 
@@ -455,5 +402,12 @@ h2{
 
 color: #DC0E0C;
 filter: drop-shadow(0 1px 3px);
+
+}
+
+.cadastro img{
+
+width: 10%;
+
 
 }
