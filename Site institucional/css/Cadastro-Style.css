@@ -389,12 +389,12 @@ button:hover {
 
 button {
 
-  background-color: #1c2a50;
+  background-color: #DC0E0C;
   border-radius: 20px;
-  width: 80px;
-  height: 25px;
+  width: 100px;
+  height: 45px;
   margin-top: 10px;
-  filter: drop-shadow(0 1px 3px);
+  filter: drop-shadow(2 1px 3px);
 
 }
 
@@ -407,7 +407,7 @@ filter: drop-shadow(0 1px 3px);
 
 .cadastro img{
 
-width: 10%;
+width: 8%;
 
 
 }
