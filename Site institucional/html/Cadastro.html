@@ -11,21 +11,17 @@
 </head>
 
 <body>
-
+<div id="video"></div>
     <div class="cadastro-container">
 
-
-
+     
         <div class="cadastro">
-
-            
-
             <ul class="NavBar">
                 <li><a href="Home.html">Home</a></li>
                 
-                <li><a href="https://www.youtube.com/watch?v=ME0QiRVsmVI">Cadastro</a></li>
+                <li><a href="Cadastro.html">Cadastro</a></li>
                 
-                <li><a href="https://www.youtube.com/watch?v=ME0QiRVsmVI">Login</a></li>
+                <li><a href="Login.html">Login</a></li>
             </ul><br><br>
 
             <img class="hero glitch layers" src="../img/Gif.miles.gif">
@@ -49,9 +45,11 @@
             </div><br>
 
 
-            <button>
+            <button onclick="resultado()">
                 Cadastrar
             </button><br>
+
+
 
         </div>
 
@@ -62,3 +60,18 @@
 </body>
 
 </html>
+
+<script>
+
+function resultado(){
+
+
+    video.innerHTML = `<video class="video" src="../img/miles pulando.mp4" autoplay controls></video>`
+
+    setTimeout(() => {
+                window.location = "Login.html";
+            }, "8470")
+
+}
+
+</script>
