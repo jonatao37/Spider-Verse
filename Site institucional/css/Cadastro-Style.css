@@ -44,15 +44,18 @@ a {
   justify-content: end;
   align-items: center;
   text-align: center;
-  position: relative;
+ 
    
 
 }
 
 .video{
-height: auto;
-width: 100%;
-position: static;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 1;
 
 }
 
