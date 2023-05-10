@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    background-image: url(https://i0.wp.com/www.portaldonerd.com.br/wp-content/uploads/2019/01/thumb-1920-968889.jpg);
+    background-attachment: fixed;
+    margin: 0;
+    width: 100%;
+    background-size: 100%; 
+  }
+
+  .box{
+
+    width: 100%;
+    height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+ 
+  
+
+  }
+
+  .texto{
+ background-color: rgba(0, 0, 0, 0.911);
+    width: 40%;
+    height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(219, 7, 7);
+  border-radius: 15px;
+
+  }
