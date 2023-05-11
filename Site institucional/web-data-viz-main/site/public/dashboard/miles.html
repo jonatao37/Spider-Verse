@@ -11,25 +11,57 @@
 </head>
 
 <body>
+  <div class="voltar"><a class="letra" href="Sobre os Personagens.html">Voltar</a></div>
   <div class="box">
+   
     <div class="texto">
+      
       <div>
         <h2>Miles morales</h2>
-        <p>Após visitar o tio, que na época era o vilão Gatuno, uma aranha da Oscorp pica Miles. Após espumar pela boca
-          e desmaiar, ele vê seu pai discutindo com seu tio e é quando ele percebe que está invisível. Ao caminhar pela
-          rua para arejar a cabeça, ele é abordado por um grupo que quer roubar sua mochila e descobre outra habilidade,
-          a capacidade de imobilizar seu oponente com veneno. <br><br>
+        <p>Após ser atingido por uma teia radioativa, Miles Morales, um jovem negro do Brooklyn, se torna o
+          Homem-Aranha, inspirado no legado do já falecido Peter Parker. Entretanto, ao visitar o túmulo de seu ídolo em
+          uma noite chuvosa, ele é surpreendido com a presença do próprio Peter, vestindo o traje do herói por baixo de
+          um sobretudo. A surpresa fica ainda maior quando Miles descobre que ele veio de uma dimensão paralela, assim
+          como outras versões do Homem-Aranha.</p>
 
-          Mesmo descobrindo poder saltar grandes distâncias e escalar paredes, o garoto opta por viver uma vida normal.
-          Isso muda dois meses depois, quando passa a ter pesadelos premonitórios onde Electro o eletrocutava. Neste
-          mesmo dia, Parker morre baleado. Descobrir a verdadeira identidade do Homem-Aranha o faz prestar uma homenagem
-          e comparece ao enterro do herói. É então que, em uma conversa com Gwen Stacy, ele descobre a máxima sobre ser
-          um Aranha: “Com grandes poderes, vem grandes responsabilidades”.</p>
       </div>
+    </div> 
+    <div class="popup">
+      <video controls id="popup-video">
+        <source
+          src="../assets/img/miles_video.mp4"
+          type="video/mp4">
+        <audio
+          src="../assets/img/miles_audio.mp3"></audio>
+      </video>
+      <button class="close-btn">X</button>
     </div>
-  </div>
 
+    
+
+
+  </div>
+  <div class="entrar"><button class="open-btn">Um pouco mais sobre mim</button></div>
 
 </body>
 
 </html>
+
+<script>
+
+  const openBtn = document.querySelector('.open-btn');
+  const closeBtn = document.querySelector('.close-btn');
+  const popup = document.querySelector('.popup');
+  const video = document.querySelector('#popup-video');
+
+  openBtn.addEventListener('click', () => {
+    popup.style.display = 'block';
+    video.play();
+  });
+
+  closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+    video.pause();
+  });
+
+</script>
