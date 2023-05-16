@@ -1,6 +1,10 @@
+
+@import url('https://fonts.cdnfonts.com/css/cloud-2');
+
+
 body {
   font-family: sans-serif;
-  background-image: url(https://comodonerd.com.br/wp-content/uploads/2023/04/miles-morales-aranhaverso-2-trailer-marvel.png);
+  background-image: url(../assets/img/miles_fundo_personagem.png);
   background-attachment: fixed;
   margin: 0;
   width: 100%;
@@ -15,11 +19,12 @@ body {
   align-items: end;
   justify-content: start;
   position: relative;
-  top: 13a0px;
+  top: 84px;
 
 }
 
 .texto {
+           
   background-color: rgba(0, 0, 0, 0.384);
   width: 35%;
   height: 40vh;
@@ -30,7 +35,7 @@ body {
   text-align: center;
   color: whitesmoke;
   border-radius: 35px;
-
+  font-family: 'Cloud', sans-serif;
 
 }
 
@@ -46,9 +51,9 @@ body {
   border-radius: 15px;
 }
 
-.popup video {
-  max-width: 100%;
-  height: auto;
+.popup iframe {
+  max-width: 110%;
+  height: 50vh;
   border-radius: 15px;
 }
 
@@ -62,22 +67,24 @@ body {
   margin-top: 10px;
   border: none;
   transition: .4s;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: larger;
   color: aliceblue;
+  font-family: 'Cloud', sans-serif;
+
 }
 
 .open-btn {
   background-color: #0000003d;
   border-radius: 10px;
   width: 150px;
-  height: 45px;
+  height: 54px;
   margin-top: 10px;
   border: none;
-  
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: larger;
   color: aliceblue;
+  font-family: 'Cloud', sans-serif;
+  transition: .4s;
+
 }
 
 button:hover {
@@ -95,11 +102,11 @@ button:hover {
   right: 5%;
 }
 
-.letra{
+.letra {
 
-list-style: none;
-margin-left: 15px;
-margin-top: 10px;
+  list-style: none;
+  margin-left: 15px;
+  margin-top: 10px;
 
 }
 
@@ -117,18 +124,19 @@ margin-top: 10px;
   transition: .4s;
 }
 
-.voltar:hover{
+.voltar:hover {
 
   transform: scale(1.2);
   cursor: pointer;
-  
+
 }
 
 a {
   text-decoration: none;
   color: #DC0E0C;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: larger;
+  font-family: 'Cloud', sans-serif;
+
 
 
 }
