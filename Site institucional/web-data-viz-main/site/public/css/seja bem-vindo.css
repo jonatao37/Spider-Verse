@@ -65,7 +65,11 @@ body {
   align-items: end;
   margin-left: 50px;
 
+}
 
+.NavBar li:hover{
+transform: scale(1.2);
+transition: 1s;
 }
 
 a {
@@ -428,7 +432,7 @@ a {
 .banner-conteiner h2 {
 
   margin-top: 250px;
-  font-size: 60px;
+  font-size: 55px;
   color: #DC0E0C;
   margin-left: 100px;
 }

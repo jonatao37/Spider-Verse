@@ -173,4 +173,40 @@ function quiz() {
 
     }
 
+
+    if (peter > miles && peter > gwen && peter > porker && peter > noir && peter > peni) {
+
+        msg_aranha.innerHTML = `Você é o Peter B. Parker`
+
+
+    }
+
+    if (gwen > peter && gwen > miles && gwen > porker && gwen > noir && gwen > peni) {
+
+        msg_aranha.innerHTML = `Você é a Gwen Stacy`
+
+
+    }
+
+    if (noir > peter && noir > gwen && noir > porker && noir > miles && noir > peni) {
+
+        msg_aranha.innerHTML = `Você é o Homem aranha Noir`
+
+
+    }
+
+    if (peni > peter && peni > gwen && peni > porker && peni > noir && peni  > miles) {
+
+        msg_aranha.innerHTML = `Você é a Peni Parker`
+
+
+    }
+
+    if (porker > peter && porker > gwen && porker > miles && porker > noir && porker > peni) {
+
+        msg_aranha.innerHTML = `Você é o Peter Porker`
+
+
+    }
+
 }

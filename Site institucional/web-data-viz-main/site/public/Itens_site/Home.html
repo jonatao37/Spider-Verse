@@ -18,7 +18,7 @@
 <body>
 
     <div class="header">
-        <div class="hero-container">
+        <div id="menu" class="hero-container">
             <a href="Home.html"><img class="hero glitch layers" src="../assets/img/logo3.png"></a>
             <h2 class="hero glitch layers"><span>Spider-Verse</span></h2>
             <ul class="NavBar">
@@ -48,18 +48,47 @@
 
             <div class="curiosidadesDesc">
                 <div class="curiosidadesText">
-                    <br><h1>Curiosidades sobre o filme<br> Spider-man: Into the Spider-Verse</h1>
+                    <br>
                     <label>
-                        <h2>O proximo filme do nosso cabeça de teia chamado miles morales esta ai na nossa frente e
-                            deixa os fãs super animados.</h2>
+                        <img src="../assets/img/Banner do filme.jpg" alt="">
                         <br><br>
-                        Esse filme está vindo e contará a jornada que miles irá ter viajando entre o multiverso e
-                        conhecendo outras versões do homem-aranha, encontrando velhos amigos, e tendo que tomar decisões
-                        que o deixará encurralado.
-                        <br><br><br>
-                        O filme trará novas versões do nosso cabeça de teia e mostrará a vastidão desse universo dos
-                        aranhas, ele chegará dia 1 junho nos cinemas, confira os trailers desse filme arastando pra
-                        baixo.
+                        O trabalho de animação foi muito complexo, curiosamente os animadores gastaram um ano para criar apenas 10 segundos de animação, após conseguir o resultado esperado é que eles começaram a acelerar o processo de animação e aumentaram a equipe até chegar ao total de 140 profissionais.
+                       
+                    </label>
+                </div>
+            
+
+            
+                <div class="curiosidadesText">
+                    <br>
+                    <label>
+                        <img src="../assets/img/Logo bugada.gif" alt="">
+                        <br><br>
+                        Em Novembro de 2014 a Sony Pictures sofreu um ataque hacker, na qual teve seus computadores invadidos e várias informações roubadas. E-mails foram divulgados na qual o co-presidente da Sony e a Amy Pascal queriam rejuvenescer a franquia de filmes do Homem-Aranha.
+                       
+                    </label>
+                </div>
+            
+            
+                <div class="curiosidadesText">
+                    <br>
+                    <label>
+                        <img src="../assets/img/peter e miles caindo.jpg" alt="">
+                        <br><br>
+                        O filme foi fortemente aclamado pela crítica especializada e pelo público, sem dúvidas é considerado um dos melhores filmes de animação. Isso porque possui um roteiro que sabe equilibrar bastante o drama com cenas de ação.
+                       
+                    </label>
+                </div>
+           
+
+           
+                <div class="curiosidadesText">
+                    <br>
+                    <label>
+                        <img src="../assets/img/oh my god.gif" alt="">
+                        <br><br>
+                        Homem-Aranha - No Aranhaverso teve um orçamento de 90 milhões de dólares e tornou-se um verdadeiro sucesso de bilheteria ao arrecadar pouco mais de 375 milhões de dólares.
+                       
                     </label>
                 </div>
             </div>
@@ -141,6 +170,14 @@
 
 <script>
     b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+
+      //Adicionando menu fixo com cor no scroll 
+    (() => {
+        let menu = document.getElementById("menu");
+        window.addEventListener("scroll", () => {
+            window.scrollY > 0 ? menu.classList.add("fixedHeader") : menu.classList.remove("fixedHeader");
+        })
+    })();
 
     //Código do carrossel
     let currentImageIndex = 0;
