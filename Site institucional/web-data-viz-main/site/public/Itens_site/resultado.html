@@ -17,8 +17,11 @@
             <ul class="NavBar">
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="Sobre os Personagens.html">Personagens</a></li>
-                <li><a href="Quiz.html"><b>Quiz</b></a></li>
-                <li><a href="../index.html">Logout</a></li>
+                <li><a class="underline" href="Quiz.html">Quiz</a></li>
+                <li class="sair"><a href="../index.html">Logout</a></li>
+                <div class="hello">
+                    <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+                </div>
         </div>
     </div>
 
@@ -32,7 +35,7 @@
 
     <button onclick="quiz()">Veja qual é o seu personagem</button><br><br>
 
-    <a class="comece" href="Quiz.html">Voltar</a>
+    <div class="comece" ><a href="Quiz.html">Voltar</a></div>
     
 </div>
 
@@ -42,4 +45,4 @@
 </body>
 </html>
 
-<script src="quiz.js"></script>
+<script src="quiz.js">b_usuario.innerHTML = sessionStorage.NOME_USUARIO;</script>

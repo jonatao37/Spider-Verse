@@ -88,6 +88,12 @@ bottom: 30px;
 
 }
 
+.underline{
+
+text-decoration: underline #8d0000 2px;
+
+}
+
 .NavBar {
   width: 60%;
   display: flex;
@@ -119,6 +125,25 @@ a {
   font-size: larger;
   text-shadow: #111, #00ff00, #DC0E0C;
 }
+
+.sair{
+
+  width: 13%;
+  height: 7vh;
+  background-color: #DC0E0C;
+  border-radius: 18px;
+  
+  }
+  
+  .sair a{
+  
+  color: black;
+  position: relative;
+  left: 15%;
+  top: 19%;
+  
+  }
+
 
 /* Fim da Navbar */
 
@@ -500,6 +525,8 @@ a {
 
 width: 95%;
 height: 26vh;
+border-radius: 5%;
+box-shadow: 1px 10px 10px 5px rgba(0, 0, 0, 0.384);
 
 }
 
@@ -523,7 +550,8 @@ height: 26vh;
 }
 
 .curiosidadesText label {
-  font-family: montserratLight;
+  font-family: 'Cloud', sans-serif;
+  width: 90%;
 }
 
 

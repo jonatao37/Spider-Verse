@@ -17,8 +17,11 @@
             <ul class="NavBar">
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="Sobre os Personagens.html">Personagens</a></li>
-                <li><a href="Quiz.html"><b>Quiz</b></a></li>
-                <li><a href="../index.html">Logout</a></li>
+                <li><a class="underline" href="Quiz.html">Quiz</a></li>
+                <li class="sair"><a href="../index.html">Logout</a></li>
+                <div class="hello">
+                    <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+                </div>
         </div>
     </div>
 
@@ -29,7 +32,7 @@
   <form>
     <div class="pergunta">
     <h2>Entre nessa jornada para <br> Descobrir qual personagem você é. <br><br>
-    <a class="comece" href="pergunta1.html">Começe</a>
+    <div class="comece"><a  href="pergunta1.html">Começe</a></div>
     </h2>
 </div>
 
@@ -40,13 +43,13 @@
 </html>
 
 <script>
+    b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
     
-function resultado(){
-
-
-
-
-
-}
+localStorage.setItem ('miles', 0);
+localStorage.setItem ('gwen', 0);
+localStorage.setItem ('peter', 0);
+localStorage.setItem ('peni', 0);
+localStorage.setItem ('noir', 0);
+localStorage.setItem ('porker', 0);
     
 </script>
