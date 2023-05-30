@@ -28,18 +28,24 @@
     </div>
 
     <div class="quiz">
-<form>
-        <div class="pergunta">
-            <h2>Pergunta 1:</h2>
-            <p>Qual é o seu preferido?</p>
-            <a href="pergunta2.html"><input type="button" id="resposta1" value="Miles Morales"></a><br><br>
-            <a href="pergunta2.html"> <input type="button" id="resposta2" value="Gwen Stacy"></a> <br><br>
-            <a href="pergunta2.html"> <input type="button" id="resposta3" value="Peter B. Parker"></a><br><br>
-            <a href="pergunta2.html"> <input type="button" id="resposta4" value="Homem-aranha Noir"></a><br><br>
-            <a href="pergunta2.html"><input type="button" id="resposta5" value="Peni Parker"></a><br><br>
-            <a href="pergunta2.html"><input type="button" id="resposta6" value="Porco-aranha"></a><br><br>
-        </div>
-</form>
+        <form>
+            <div id="pergunta1" class="pergunta">
+                <p id="question"></p>
+                <form id="answersForm">
+                    <input type="radio" class="opcao" id="input" name="answer" value="Miles Morales">
+                    <label id="option1" for="input"></label><br><br>
+                    <input type="radio" class="opcao" id="input2" name="answer" value="Peter B. Parker">
+                    <label id="option2" for="input2"></label><br><br>
+                    <input type="radio" class="opcao" id="input3" name="answer" value="Gwen Stacy">
+                    <label id="option3" for="input3"></label><br><br>
+                    <input type="radio" class="opcao" id="input4" name="answer" value="Peni Parker">
+                    <label id="option4" for="input4"></label><br><br>
+                </form>
+                <button onclick="proximo()">Próxima Pergunta</button><br><br>
+
+                <div id="result" style="display: none;"></div>
+            </div>
+        </form>
     </div>
 
 
@@ -47,4 +53,11 @@
 
 </html>
 
-<script src="quiz.js"></script>
+<script>
+
+
+
+
+
+
+</script>
