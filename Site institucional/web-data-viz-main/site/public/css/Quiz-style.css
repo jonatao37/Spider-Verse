@@ -140,7 +140,7 @@ h1 {
   flex-direction: column;
 }
 
-form {
+.pergunta-container {
   max-width: 400px;
   margin: 0 auto;
   background-color: #fff;
@@ -167,31 +167,6 @@ h2 {
 p {
   color: #000000;
   margin-bottom: 15px;
-}
-
-input{
-
-display: none;
-
-}
-
-label{
-  margin-right: 5px;
-  width: 150%;
-  height: 10vh;
-  border: none;
-  border-radius: 10px;
-  background-color: #DC0E0C;
-  font-family: 'Cloud', sans-serif;
-  
-}
-
-input:hover {
-
-  transform: scale(1.1);
-  transition: 0.5s ease-in-out;
-  
-
 }
 
 .comece {
@@ -231,14 +206,37 @@ button:hover {
 
 button {
 
+  width: 100%;
+  height: 5vh;
+  border: none;
+  border-radius: 10px;
+  background-color: #DC0E0C;
+  font-family: 'Cloud', sans-serif;
+  transition: 0.5s;
+  font-family: 'Cloud', sans-serif;
+  font-size: small;
+
+}
+
+.resultado{
+
   background-color: #DC0E0C;
   border-radius: 18px;
-  width: 300px;
+  width: 350px;
   height: 40px;
   border: none;
   transition: 0.5s;
   font-family: 'Cloud', sans-serif;
   font-size: larger;
+
+
+}
+
+.resultado:hover{
+
+  transform: scale(1.1);
+  cursor: pointer;
+
 
 }
 

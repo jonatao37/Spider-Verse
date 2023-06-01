@@ -21,6 +21,7 @@
 <body>
 
     <div class="login-container">
+        <div id="video"></div>
         <div class="login">
             
             <a href="index.html"><img class="hero glitch layers" src="../assets/img/Gif.miles.gif"></a>
@@ -92,9 +93,11 @@
                     sessionStorage.NOME_USUARIO = json.nome;
                     sessionStorage.ID_USUARIO = json.id;
 
+                    video.innerHTML = `<video class="video" src="assets/img/Miles login - Made with Clipchamp.mp4" autoplay></video>`
+
                     setTimeout(function () {
                         window.location = "../Itens_site/Home.html";
-                    }, 0000); // apenas para exibir o loading
+                    }, 4500); // apenas para exibir o loading
 
                 });
 

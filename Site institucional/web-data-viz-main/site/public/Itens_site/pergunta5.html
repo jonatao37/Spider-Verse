@@ -20,6 +20,7 @@
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="Sobre os Personagens.html">Personagens</a></li>
                 <li><a class="underline" href="Quiz.html">Quiz</a></li>
+                <li><a href="Dashboards.html">Dashboards</a></li>
                 <li class="sair"><a href="../index.html">Logout</a></li>
                 <div class="hello">
                     <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
@@ -28,18 +29,18 @@
     </div>
 
     <div class="quiz">
-        <form>
+        <div class="pergunta-container">
             <div class="pergunta">
                 <h2>Pergunta 5:</h2>
                 <p>Qual é sua cor favorita?</p>
-                <a href="pergunta6.html"><input type="button" id="resposta25" value="Branco"></a><br><br>
-                <a href="pergunta6.html"><input type="button" id="resposta26" value="Vermelho"></a><br><br>
-                <a href="pergunta6.html"><input type="button" id="resposta27" value="Preto"></a><br><br>
-                <a href="pergunta6.html"><input type="button" id="resposta28" value="Azul"></a><br><br>
-                <a href="pergunta6.html"><input type="button" id="resposta29" value="Rosa"></a><br><br>
-                <a href="pergunta6.html"><input type="button" id="resposta30" value="Roxo"></a><br><br>
+                <button onclick="responder(5, 2)">Branco</button><br><br>
+                <button onclick="responder(5, 1)">Vermelho</button><br><br>
+                <button onclick="responder(5, 5)">Preto</button><br><br>
+                <button onclick="responder(5, 3)">Azul</button><br><br>
+                <button onclick="responder(5, 4)">Rosa</button><br><br>
+                <button onclick="responder(5, 6)">Roxo</button><br><br>
             </div>
-        </form>
+        </div>
 
     </div>
 

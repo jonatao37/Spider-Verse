@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="shortcut icon" href="../assets/img/logo3.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/Quiz-style.css">
 </head>
+
 <body>
 
     <div class="header">
@@ -18,6 +20,7 @@
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="Sobre os Personagens.html">Personagens</a></li>
                 <li><a class="underline" href="Quiz.html">Quiz</a></li>
+                <li><a href="Dashboards.html">Dashboards</a></li>
                 <li class="sair"><a href="../index.html">Logout</a></li>
                 <div class="hello">
                     <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
@@ -25,24 +28,25 @@
         </div>
     </div>
 
-<div class="quiz">
+    <div class="quiz">
 
-    <h1>Qual personagem você é?</h1>
+        <h1>Qual personagem você é?</h1>
 
-  <form>
-    <div class="pergunta">
-    <div id="msg_aranha"></div><br><br>
+        <div class="pergunta-container">
+            <div class="pergunta">
+                <div id="msg_aranha"></div><br><br>
 
-    <button onclick="quiz()">Veja qual é o seu personagem</button><br><br>
+                <button class="resultado" onclick="quiz()">Veja qual é o seu personagem</button><br><br>
 
-    <div class="comece" ><a href="Quiz.html">Voltar</a></div>
-    
-</div>
+                <div class="comece"><a href="Quiz.html">Voltar</a></div>
 
-  </form>
+            </div>
 
-</div>
+        </div>
+
+    </div>
 </body>
+
 </html>
 
 <script src="quiz.js">b_usuario.innerHTML = sessionStorage.NOME_USUARIO;</script>

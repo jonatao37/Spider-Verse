@@ -20,6 +20,7 @@
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="Sobre os Personagens.html">Personagens</a></li>
                 <li><a class="underline" href="Quiz.html">Quiz</a></li>
+                <li><a href="Dashboards.html">Dashboards</a></li>
                 <li class="sair"><a href="../index.html">Logout</a></li>
                 <div class="hello">
                     <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
@@ -28,24 +29,18 @@
     </div>
 
     <div class="quiz">
-        <form>
-            <div id="pergunta1" class="pergunta">
-                <p id="question"></p>
-                <form id="answersForm">
-                    <input type="radio" class="opcao" id="input" name="answer" value="Miles Morales">
-                    <label id="option1" for="input"></label><br><br>
-                    <input type="radio" class="opcao" id="input2" name="answer" value="Peter B. Parker">
-                    <label id="option2" for="input2"></label><br><br>
-                    <input type="radio" class="opcao" id="input3" name="answer" value="Gwen Stacy">
-                    <label id="option3" for="input3"></label><br><br>
-                    <input type="radio" class="opcao" id="input4" name="answer" value="Peni Parker">
-                    <label id="option4" for="input4"></label><br><br>
-                </form>
-                <button onclick="proximo()">Próxima Pergunta</button><br><br>
-
-                <div id="result" style="display: none;"></div>
-            </div>
-        </form>
+        <div class="pergunta-container">
+        <div class="pergunta">
+            <h2>Pergunta 1:</h2>
+            <p>Qual o seu personagem favorito?</p>
+            <button onclick="responder(1, 1)">Miles Morales</button><br><br>
+            <button onclick="responder(1, 2)">Gwen Stacy</button><br><br>
+            <button onclick="responder(1, 3)">Peter B. Parker</button><br><br>
+            <button onclick="responder(1, 4)">Peni Parker</button><br><br>
+            <button onclick="responder(1, 5)">Homem-aranha Noir</button><br><br>
+            <button onclick="responder(1, 6)">Peter Porker</button><br><br>
+        </div>
+    </div>
     </div>
 
 
@@ -53,11 +48,4 @@
 
 </html>
 
-<script>
-
-
-
-
-
-
-</script>
+<script src="quiz.js"></script>

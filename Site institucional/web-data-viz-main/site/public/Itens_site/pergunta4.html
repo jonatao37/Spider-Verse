@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="shortcut icon" href="../assets/img/logo3.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/Quiz-style.css">
 </head>
+
 <body>
 
     <div class="header">
@@ -18,6 +20,7 @@
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="Sobre os Personagens.html">Personagens</a></li>
                 <li><a class="underline" href="Quiz.html">Quiz</a></li>
+                <li><a href="Dashboards.html">Dashboards</a></li>
                 <li class="sair"><a href="../index.html">Logout</a></li>
                 <div class="hello">
                     <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
@@ -26,18 +29,18 @@
     </div>
 
     <div class="quiz">
-        <form>
-        <div class="pergunta">
-            <h2>Pergunta 4:</h2>
-            <p>Qual é sua personalidade?</p>
-            <a href="pergunta5.html"><input type="button" id="resposta19" value="Aventureiro e Corajoso"></a><br><br>
-            <a href="pergunta5.html"><input type="button" id="resposta20" value="Criativo e Artistico"></a> <br><br>
-            <a href="pergunta5.html"><input type="button" id="resposta21" value="Engraçado e Brincalhão"></a><br><br>
-            <a href="pergunta5.html"><input type="button" id="resposta22" value="Determinado e Leal"></a><br><br>
-            <a href="pergunta5.html"><input type="button" id="resposta23" value="Timido e mais na sua"></a><br><br>
-            <a href="pergunta5.html"> <input type="button" id="resposta24" value="Gosta de fazer piadas e ser Atencioso"></a><br><br>
+        <div class="pergunta-container">
+            <div class="pergunta">
+                <h2>Pergunta 4:</h2>
+                <p>Qual é sua personalidade?</p>
+                <button onclick="responder(4, 1)">Aventureiro e Corajoso</button><br><br>
+                <button onclick="responder(4, 2)">Criativo e Artistico</button><br><br>
+                <button onclick="responder(4, 3)">Engraçado e Brincalhão</button><br><br>
+                <button onclick="responder(4, 4)">Determinado e Leal</button><br><br>
+                <button onclick="responder(4, 5)">Timido e mais na sua</button><br><br>
+                <button onclick="responder(4, 6)">Gosta de fazer piadas e ser Atencioso</button><br><br>
+            </div>
         </div>
-</form>
     </div>
 
 

@@ -20,6 +20,7 @@
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="Sobre os Personagens.html">Personagens</a></li>
                 <li><a class="underline" href="Quiz.html">Quiz</a></li>
+                <li><a href="Dashboards.html">Dashboards</a></li>
                 <li class="sair"><a href="../index.html">Logout</a></li>
                 <div class="hello">
                     <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
@@ -28,24 +29,19 @@
     </div>
 
     <div class="quiz">
-        <form>
+        <div class="pergunta-container">
             <div class="pergunta">
                 <h2>Pergunta 6:</h2>
                 <p>Quais são os seus valores?</p>
-                <a href="resultado.html"> <input type="button" id="resposta31"
-                        value="Sociavel e Espontâneo"></a><br><br>
-                <a href="resultado.html"> <input type="button" id="resposta32" value="Humildade e Empatia"></a>
-                <br><br>
-                <a href="resultado.html"> <input type="button" id="resposta33"
-                        value="Anti-Sociavel e Timides"></a><br><br>
-                <a href="resultado.html"><input type="button" id="resposta34"
-                        value="Corajoso e Bem-humorado"></a><br><br>
-                <a href="resultado.html"> <input type="button" id="resposta35"
-                        value="Extrovertido e Receptivo"></a><br><br>
-                <a href="resultado.html"><input type="button" id="resposta36" value="Maduro e Conservador"></a><br><br>
+                <button onclick="responder(6, 3)">Sociavel e Espontâneo</button><br><br>
+                <button onclick="responder(6, 1)">Humildade e Empatia</button><br><br>
+                <button onclick="responder(6, 2)">Anti-Sociavel e Timides</button><br><br>
+                <button onclick="responder(6, 4)">Corajoso e Bem-humorado</button><br><br>
+                <button onclick="responder(6, 6)">Extrovertido e Receptivo</button><br><br>
+                <button onclick="responder(6, 5)">Maduro e Conservador</button><br><br>
             </div>
-        </form>
-
+        </div>
+    </div>
 
 
 

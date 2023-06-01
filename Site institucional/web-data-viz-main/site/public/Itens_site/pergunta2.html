@@ -18,6 +18,7 @@
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="Sobre os Personagens.html">Personagens</a></li>
                 <li><a class="underline" href="Quiz.html">Quiz</a></li>
+                <li><a href="Dashboards.html">Dashboards</a></li>
                 <li class="sair"><a href="../index.html">Logout</a></li>
                 <div class="hello">
                     <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
@@ -26,18 +27,18 @@
     </div>
 
     <div class="quiz">
-        <form>
+        <div class="pergunta-container">
         <div class="pergunta">
             <h2>Pergunta 2:</h2>
             <p>Qual dessas musicas você mais gosta?</p>
-            <a href="pergunta3.html"><input type="button" id="resposta7" value="Sunflower - Post Malone"></a><br><br>
-            <a href="pergunta3.html"><input type="button" id="resposta8" value="Something in the Way - Nirvana"></a> <br><br>
-            <a href="pergunta3.html"><input type="button" id="resposta9" value="People Get Up and Drive your Funky soul - James Brown"></a><br><br>
-            <a href="pergunta3.html"><input type="button" id="resposta10" value="Want It Here - Xenia Pax"></a><br><br>
-            <a href="pergunta3.html"><input type="button" id="resposta11" value="Blitzkrieg Bop - Hey Ho Let's Go"></a><br><br>
-            <a href="pergunta3.html"><input type="button" id="resposta12" value=" On my way - Alan Walker, Sabrina Carpenter"></a><br>
+            <button onclick="responder(2, 1)">Sunflower - Post Malone</button><br><br>
+            <button onclick="responder(2, 5)">Something in the Way - Nirvana</button><br><br>
+            <button onclick="responder(2, 3)">People Get Up and Drive your Funky soul - James Brown</button><br><br>
+            <button onclick="responder(2, 4)">Want It Here - Xenia Pax</button><br><br>
+            <button onclick="responder(2, 6)">Blitzkrieg Bop - Hey Ho Let's Go</button><br><br>
+            <button onclick="responder(2, 2)">On my way - Alan Walker, Sabrina Carpenter</button><br>
         </div>
-</form>
+</div>
     </div>
 
 
