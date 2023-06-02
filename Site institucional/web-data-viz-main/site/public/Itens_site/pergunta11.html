@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="shortcut icon" href="../assets/img/logo3.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/Quiz-style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="hero-container">
+            <a href="Home.html"><img class="hero glitch layers" src="../assets/img/logo3.png"></a>
+            <h2 class="hero glitch layers"><span>Spider-Verse</span></h2>
+            <ul class="NavBar">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Sobre os Personagens.html">Personagens</a></li>
+                <li><a class="underline" href="Quiz.html">Quiz</a></li>
+                <li><a href="Dashboards.html">Dashboards</a></li>
+                <li class="sair"><a href="../index.html">Logout</a></li>
+                <div class="hello">
+                    <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+                </div>
+        </div>
+    </div>
+
+    <div class="quiz">
+        <div class="pergunta-container">
+            <div class="pergunta">
+                <h2>Pergunta 11:</h2>
+                <p>Como você é se relacionando com os outros?</p>
+                <button onclick="responder(11, 1)">É um lider natural</button><br><br>
+                <button onclick="responder(11, 2)">É um solitario criativo</button><br><br>
+                <button onclick="responder(11, 3)">É o palhaço da turma</button><br><br>
+                <button onclick="responder(11, 6)">É um fiel companheiro</button><br><br>
+                <button onclick="responder(11, 4)">É amigavel</button><br><br>
+                <button onclick="responder(11, 5)">É timido e quieto</button><br><br>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
+
+<script src="quiz.js"></script>
