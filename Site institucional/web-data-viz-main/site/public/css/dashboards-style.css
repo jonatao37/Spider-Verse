@@ -161,28 +161,33 @@ a {
 
 }
 
-.grafico1 {
-  width: 180%;
+
+
+.grafico {
+  width: 160%;
   height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #111;
   position: relative;
-  right: 100%;
+  right: 70%;
   top: 150px;
   border-radius: 18px;
+  display: flex;
+
 }
 
-.grafico2 {
-  width: 180%;
+.grafico1 {
+  width: 160%;
   height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #111;
   position: relative;
-  right: 320%;
+  right: 235%;
   bottom: 10px;
   border-radius: 18px;
 }
+

@@ -58,6 +58,7 @@ function responder (pergunta, resposta) {
 }
 
 }
+var resultadoFinal = ''
 
 function quiz() {
 
@@ -79,6 +80,9 @@ var porker = Number(localStorage.getItem('porker'));
         
         Você é um jovem e talentoso Homem-Aranha que está aprendendo a lidar com seus poderes e responsabilidades e que tem um bom coração.`
 
+        resultadoFinal = 'Miles Morales'
+        cadastrarQuiz()
+
 
     }else if (peter > miles && peter > gwen && peter > porker && peter > noir && peter > peni) {
 
@@ -89,6 +93,10 @@ var porker = Number(localStorage.getItem('porker'));
         <h1>Peter B. Parker</h1>
         
         O Homem-Aranha experiente, habilidoso e bastante destemido de outra dimensão, e meio fudido.`
+
+        resultadoFinal = 'Peter B. Parker'
+        cadastrarQuiz()
+
 
 
     }else if (gwen > peter && gwen > miles && gwen > porker && gwen > noir && gwen > peni) {
@@ -101,6 +109,9 @@ var porker = Number(localStorage.getItem('porker'));
         
         Neste universo, quem foi picada pela aranha e ganhou os poderes não foi Peter Parker, e sim Gwen Stacy. Outra diferença do universo principal foi como ela decidiu ser uma super-heroína. Gwen apenas decidiu assumir a responsabilidade de ser a Mulher-Aranha após Peter Parker morrer tentando ser especial como ela.`
 
+        resultadoFinal = 'Gwen Stacy'
+        cadastrarQuiz()
+
 
     }else if (noir > peter && noir > gwen && noir > porker && noir > miles && noir > peni) {
 
@@ -111,6 +122,9 @@ var porker = Number(localStorage.getItem('porker'));
         <h1>Homem-aranha Noir</h1>
         
         O Homem-Aranha da década de 1930 com uma abordagem única e um senso de humor sarcástico, e uma sabedoria e experiencia um pouco mais superior.`
+
+        resultadoFinal = 'Homem-aranha Noir'
+        cadastrarQuiz()
 
 
     }else if (peni > peter && peni > gwen && peni > porker && peni > noir && peni > miles) {
@@ -123,6 +137,9 @@ var porker = Number(localStorage.getItem('porker'));
         
         Você é animada(o) e divertida(0), gosta de fazer coisas usando bastante a criatividade e é muito inteligente.`
 
+        resultadoFinal = 'Peni Parker'
+        cadastrarQuiz()
+
 
     }else {
 
@@ -130,11 +147,78 @@ var porker = Number(localStorage.getItem('porker'));
         
         <img src="../assets/img/gifporker.gif" alt="">
 
-        <h1>Peter Porker</h1>
+        <h1>Porco-aranha (Peter Porker)</h1>
         
         o Homem-Aranha porco antropomórfico com suas habilidades peculiares e seu estilo descontraído.`
 
+        resultadoFinal = 'Porco-aranha'
+        cadastrarQuiz()
 
     }
 
+    
+
 }
+
+
+function cadastrarQuiz() {
+        // aguardar();
+        //Recupere o valor da nova input pelo nome do id
+        // Agora vá para o método fetch logo abaixo
+        var resultadoVar = resultadoFinal;
+        var idUsuarioVar = sessionStorage.ID_USUARIO;
+
+        if (resultadoVar == "" || idUsuarioVar == "" ) {
+            // cardErro.style.display = "block"
+            // mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+
+            // finalizarAguardar();
+            return false;
+        }
+        else {
+            setInterval(5000)
+        }
+
+        // Enviando o valor da nova input
+        fetch("/usuarios/cadastrarQuiz", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                resultadoServer: resultadoVar,
+                idUsuarioServer: idUsuarioVar
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                // cardErro.style.display = "block";
+
+                // mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+
+                
+
+                setTimeout(() => {
+                    // window.location = "Login.html";
+                }, "8470")
+
+                // limparFormulario();
+                // finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            // finalizarAguardar();
+        });
+
+        return false;
+    }
+
+    // function sumirMensagem() {
+    //     cardErro.style.display = "none"
+    // }
