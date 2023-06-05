@@ -10,3 +10,19 @@ senha varchar(15)
 );
 
 select * from usuario;
+
+truncate table usuario;
+
+create table quiz (
+idQuiz int primary key auto_increment,
+personagem varchar(45),
+fkusuario int,
+constraint fkusuario foreign key (fkusuario)
+references usuario(idUsuario)
+);
+
+select personagem from quiz;
+
+SELECT COUNT(idQuiz) AS quantidade, personagem FROM quiz GROUP BY personagem;
+
+truncate table quiz;
