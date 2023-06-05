@@ -78,23 +78,31 @@ var porker = Number(localStorage.getItem('porker'));
 
         <h1>Miles Morales</h1>
         
-        Você é um jovem e talentoso Homem-Aranha que está aprendendo a lidar com seus poderes e responsabilidades e que tem um bom coração.`
+        <p>Você é um jovem e talentoso Homem-Aranha que está aprendendo a lidar com seus poderes e responsabilidades e que tem um bom coração.</p><br>
+        
+        <span>Para saber mais sobre esse personagem</span>
+               <a href="miles.html">Clique aqui</a>
+        `
 
         resultadoFinal = 'Miles Morales'
         cadastrarQuiz()
 
 
-    }else if (peter > miles && peter > gwen && peter > porker && peter > noir && peter > peni) {
+    }else if (porker > miles && porker > gwen && porker > peter && porker > noir && porker > peni) {
 
-        msg_aranha.innerHTML = `
+         msg_aranha.innerHTML =  `
         
-        <img src="../assets/img/gifpeter.gif" alt="">
+        <img src="../assets/img/gifporker.gif" alt="">
 
-        <h1>Peter B. Parker</h1>
+        <h1>Porco-aranha (Peter Porker)</h1>
         
-        O Homem-Aranha experiente, habilidoso e bastante destemido de outra dimensão, e meio fudido.`
+        <p>O Homem-Aranha porco antropomórfico com suas habilidades peculiares e seu estilo descontraído.</p><br>
+        
+        <span>Para saber mais sobre esse personagem</span>
+               <a href="porker.html">Clique aqui</a>
+        `
 
-        resultadoFinal = 'Peter B. Parker'
+        resultadoFinal = 'Porco-aranha'
         cadastrarQuiz()
 
 
@@ -107,7 +115,11 @@ var porker = Number(localStorage.getItem('porker'));
 
         <h1>Gwen Stacy</h1>
         
-        Neste universo, quem foi picada pela aranha e ganhou os poderes não foi Peter Parker, e sim Gwen Stacy. Outra diferença do universo principal foi como ela decidiu ser uma super-heroína. Gwen apenas decidiu assumir a responsabilidade de ser a Mulher-Aranha após Peter Parker morrer tentando ser especial como ela.`
+        <p>Neste universo, quem foi picada pela aranha e ganhou os poderes não foi Peter Parker, e sim Gwen Stacy. Outra diferença do universo principal foi como ela decidiu ser uma super-heroína. Gwen apenas decidiu assumir a responsabilidade de ser a Mulher-Aranha após Peter Parker morrer tentando ser especial como ela.</p><br>
+        
+        <span>Para saber mais sobre esse personagem</span>
+               <a href="gwen.html">Clique aqui</a>
+        `
 
         resultadoFinal = 'Gwen Stacy'
         cadastrarQuiz()
@@ -121,7 +133,11 @@ var porker = Number(localStorage.getItem('porker'));
 
         <h1>Homem-aranha Noir</h1>
         
-        O Homem-Aranha da década de 1930 com uma abordagem única e um senso de humor sarcástico, e uma sabedoria e experiencia um pouco mais superior.`
+        <p>O Homem-Aranha da década de 1930 com uma abordagem única e um senso de humor sarcástico, e uma sabedoria e experiencia um pouco mais superior.</p><br>
+        
+        <span>Para saber mais sobre esse personagem</span>
+               <a href="noir.html">Clique aqui</a>
+        `
 
         resultadoFinal = 'Homem-aranha Noir'
         cadastrarQuiz()
@@ -135,7 +151,11 @@ var porker = Number(localStorage.getItem('porker'));
 
         <h1>Peni Parker</h1>
         
-        Você é animada(o) e divertida(0), gosta de fazer coisas usando bastante a criatividade e é muito inteligente.`
+        <p>Você é animada(o) e divertida(0), gosta de fazer coisas usando bastante a criatividade e é muito inteligente.</p><br>
+        
+        <span>Para saber mais sobre esse personagem</span>
+               <a href="peni.html">Clique aqui</a>
+        `
 
         resultadoFinal = 'Peni Parker'
         cadastrarQuiz()
@@ -143,17 +163,22 @@ var porker = Number(localStorage.getItem('porker'));
 
     }else {
 
-        msg_aranha.innerHTML =  `
+      
+ msg_aranha.innerHTML = `
         
-        <img src="../assets/img/gifporker.gif" alt="">
+        <img src="../assets/img/gifpeter.gif" alt="">
 
-        <h1>Porco-aranha (Peter Porker)</h1>
+        <h1>Peter B. Parker</h1>
         
-        o Homem-Aranha porco antropomórfico com suas habilidades peculiares e seu estilo descontraído.`
+        <p>O Homem-Aranha experiente, habilidoso e bastante destemido de outra dimensão, e meio fudido.</p><br>
+        
+        <span>Para saber mais sobre esse personagem</span>
+               <a href="peter.html">Clique aqui</a>
+        
+        `
 
-        resultadoFinal = 'Porco-aranha'
+        resultadoFinal = 'Peter B. Parker'
         cadastrarQuiz()
-
     }
 
     

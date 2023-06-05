@@ -26,12 +26,18 @@
     <div class="popup">
       <iframe id="popup-video" width="560" height="315"  src="https://www.youtube.com/embed/qETSbku4qF0" frameborder="0"
       allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+      allowfullscreen></iframe> 
       <button class="close-btn">X</button>
+    </div> 
+    <div class="popup2">
+      <iframe id="popup-video2" width="560" height="315"  src="https://www.youtube.com/embed/vzJCCXJLV_o" frameborder="0"
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+      <button class="close-btn2">X</button>
     </div>
-
+ 
     
-
+<img class="open-btn2" src="../assets/img/apaixonados.png" alt="">
 
   </div>
   <div class="entrar"><button class="open-btn">Um pouco mais sobre mim</button></div>
@@ -43,9 +49,13 @@
 <script>
 
   var openBtn = document.querySelector('.open-btn');
+  var openBtn2 = document.querySelector('.open-btn2');
   var closeBtn = document.querySelector('.close-btn');
+  var closeBtn2 = document.querySelector('.close-btn2');
   var popup = document.querySelector('.popup');
+  var popup2 = document.querySelector('.popup2');
   var video = document.querySelector('#popup-video');
+  var video2 = document.querySelector('#popup-video2');
 
   openBtn.addEventListener('click', () => {
     popup.style.display = 'block';
@@ -55,6 +65,16 @@
   closeBtn.addEventListener('click', () => {
     popup.style.display = 'none';
     video.pause();
+  });
+
+  openBtn2.addEventListener('click', () => {
+    popup2.style.display = 'block';
+    video2.play();
+  });
+
+  closeBtn2.addEventListener('click', () => {
+    popup2.style.display = 'none';
+    video2.pause();
   });
 
 </script>

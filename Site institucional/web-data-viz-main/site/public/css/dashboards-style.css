@@ -3,6 +3,7 @@
 body {
   font-family: 'Cloud', sans-serif;
   background-attachment: fixed;
+  background-image: url(../assets/img/fundo\ dashboards.jpeg);
   margin: 0;
   width: 100%;
   background-size: cover;
@@ -12,14 +13,17 @@ body {
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 10px black;
   background-color: black;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #8d0000;
-  border-radius: 10px ;
+  border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background-color: #96000080;
 }
@@ -76,22 +80,22 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-.hello{
+.hello {
 
-color: #DC0E0C;
-display: flex;
-justify-content: end;
-align-items: end;
-position: relative;
+  color: #DC0E0C;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  position: relative;
 
-bottom: 30px;
+  bottom: 30px;
 
 
 }
 
-.underline{
+.underline {
 
-text-decoration: underline #8d0000 2px;
+  text-decoration: underline #8d0000 2px;
 
 }
 
@@ -127,32 +131,31 @@ a {
   text-shadow: #111, #00ff00, #DC0E0C;
 }
 
-.sair{
+.sair {
 
   width: 13%;
   height: 7vh;
   background-color: #DC0E0C;
   border-radius: 18px;
-  
-  }
-  
-  .sair a{
-  
+
+}
+
+.sair a {
+
   color: black;
   position: relative;
   left: 15%;
   top: 19%;
-  
-  }
+
+}
 
 
 /* Fim da Navbar */
 
-.banner{
+.banner {
 
   width: 100%;
-  height: 125vh;
-  background-image: url(../assets/img/fundo\ dashboards.jpeg);
+  height: 80vh;
   background-size: 100%;
   display: flex;
   justify-content: end;
@@ -161,33 +164,53 @@ a {
 
 }
 
+.banner-container {
+
+  width: 100%;
+  height: 140vh;
+  display: flex;
+
+
+}
 
 
 .grafico {
-  width: 160%;
+
+  display: flex;
+  flex-direction: column;
+  width: 90%;
   height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #111;
+  background-color: #111111e3;
   position: relative;
-  right: 70%;
-  top: 150px;
+  left: 50%;
+  top: 400px;
   border-radius: 18px;
-  display: flex;
+
 
 }
 
 .grafico1 {
-  width: 160%;
+
+  display: flex;
+  flex-direction: column;
+  width: 90%;
   height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #111;
+  background-color: #111111e1;
   position: relative;
-  right: 235%;
-  bottom: 10px;
+  right: 50%;
+  top: 400px;
   border-radius: 18px;
+}
+
+h1{
+
+color: rgb(179, 174, 167);
+
 }
 

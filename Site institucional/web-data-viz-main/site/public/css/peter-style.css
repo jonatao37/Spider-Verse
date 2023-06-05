@@ -3,11 +3,11 @@
 
 body {
   font-family: sans-serif;
-  background-image: url(../assets/img/wallpaperflare.com_wallpaper\ \(2\).jpg);
+  background-image: url(../assets/img/peterbparker.png);
   background-attachment: fixed;
   margin: 0;
   width: 100%;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .box {

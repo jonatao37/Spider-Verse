@@ -25,7 +25,7 @@ body {
 
 .texto {
            
-  background-color: rgba(0, 0, 0, 0.384);
+  background-color: rgba(0, 0, 0, 0.664);
   width: 35%;
   height: 40vh;
   padding: 15px;
@@ -73,8 +73,43 @@ body {
 
 }
 
+.popup2 {
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00000000;
+  z-index: 9999;
+  display: none;
+  border-radius: 15px;
+}
+
+.popup2 iframe {
+  max-width: 110%;
+  height: 50vh;
+  border-radius: 15px;
+}
+
+.popup2 button {
+  display: block;
+  margin: 10px auto;
+  background-color: transparent;
+  border-radius: 10px;
+  width: 150px;
+  height: 45px;
+  margin-top: 10px;
+  border: none;
+  transition: .4s;
+  font-size: larger;
+  color: aliceblue;
+  font-family: 'Cloud', sans-serif;
+
+}
+
+
 .open-btn {
-  background-color: #0000003d;
+  background-color: #000000c5;
   border-radius: 10px;
   width: 150px;
   height: 54px;
@@ -131,12 +166,28 @@ button:hover {
 
 }
 
-a {
+.voltar a {
   text-decoration: none;
   color: #DC0E0C;
   font-size: larger;
   font-family: 'Cloud', sans-serif;
 
 
+
+}
+
+img{
+
+width: 7%;
+position: relative;
+bottom: 580px;
+left: 28%;
+transition: 0.5s ease-in-out;
+}
+
+img:hover{
+
+  transform: scale(1.2);
+  cursor: pointer;
 
 }
