@@ -1,0 +1,119 @@
+@import url('https://fonts.cdnfonts.com/css/cloud-2');
+
+body {
+
+  font-family: sans-serif;
+  background-image: url(../assets/img/miles\ -\ cadastro.png);
+  background-attachment: fixed;
+  margin: 0;
+  width: 100%;
+  background-size: 90%;
+
+}
+
+/* Começo da caixa de cadastro */
+
+.cadastro-container {
+
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: end;
+
+}
+
+.cadastro {
+
+  background-color: black;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.input {
+
+  font-size: large;
+
+}
+
+input {
+
+  border: none;
+  border-bottom: 2px solid #DC0E0C;
+  background-color: transparent;
+  height: 30px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  align-items: center;
+  outline: none;
+  color: white;
+
+}
+
+button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+
+}
+
+button {
+
+  background-color: #DC0E0C;
+  border-radius: 10px;
+  width: 150px;
+  height: 45px;
+  margin-top: 10px;
+  filter: drop-shadow(2 1px 3px);
+  border: none;
+  transition: .4s;
+  font-family: 'Cloud', sans-serif;
+  font-size: larger;
+
+}
+
+h2 {
+
+  color: #DC0E0C;
+  filter: drop-shadow(0 1px 3px);
+
+}
+
+.cadastro img {
+
+  width: 8%;
+
+
+}
+
+span {
+
+  font-family: 'Cloud', sans-serif;
+  background-color: #DC0E0C;
+  border-radius: 5px;
+  color: black;
+  position: relative;
+  bottom: 30px;
+
+}
+
+
+/* Fim da caixa de cadastro */
+
+/* Video de transcisão */
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+
+
+}

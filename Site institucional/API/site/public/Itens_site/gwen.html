@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spider-Gwen</title>
+  <link rel="icon" href="../assets/img/logo3.png">
+  <link rel="stylesheet" href="../css/gwen-style.css">
+</head>
+
+<body>
+  <div class="voltar"><a class="letra" href="Sobre os Personagens.html">Voltar</a></div>
+  <div class="box">
+    <div class="texto">
+      <div>
+        <h2>Spider-Gwen</h2>
+        <p>Gwen é uma adolescente descolada, toca em uma banda só de mulheres ao lado de Mary Jane e seu traje
+          predominantemente branco com capuz virou uma marca. Assim como Miles, ela compartilha poderes semelhantes ao
+          do Aranha original, mas tem um diferencial: o domínio da viagem interdimensional.</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="popup">
+      <iframe id="popup-video" width="560" height="315" src="https://www.youtube.com/embed/E3_6DBm0nDI" frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <button class="close-btn">X</button>
+    </div>
+
+  </div>
+  <div class="entrar"><button class="open-btn">Um pouco mais sobre mim</button></div>
+</body>
+
+</html>
+
+<script>
+
+  var openBtn = document.querySelector('.open-btn');
+  var closeBtn = document.querySelector('.close-btn');
+  var popup = document.querySelector('.popup');
+  var video = document.querySelector('#popup-video');
+
+  openBtn.addEventListener('click', () => {
+    popup.style.display = 'block';
+    video.play();
+  });
+
+  closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+    video.pause();
+  });
+
+
+</script>

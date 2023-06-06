@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peni Parker</title>
+  <link rel="icon" href="../assets/img/logo3.png">
+  <link rel="stylesheet" href="../css/peni-style.css">
+
+</head>
+
+<body>
+  <div class="voltar"><a class="letra" href="Sobre os Personagens.html">Voltar</a></div>
+  <div class="box">
+
+    <div class="texto">
+
+      <div>
+        <h2>Peni Parker</h2>
+        <p>Peni tem como melhor amigo um aranha-robô, um projeto usado pelo seu pai, que acabou sendo morto em combate.
+          Já nos quadrinhos, Peni Parker chega a lutar lado a lado com o Demolidor do seu universo e tem que enfrentar
+          diversos vilões consagrados do Aranha, como o Mystério.</p>
+
+      </div>
+    </div>
+    <div class="popup">
+      <iframe id="popup-video" width="560" height="315" src="https://www.youtube.com/embed/-c0tZ5zQlvg" frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <button class="close-btn">X</button>
+    </div>
+
+
+
+
+  </div>
+  <div class="entrar"><button class="open-btn">Um pouco mais sobre mim</button></div>
+
+</body>
+
+</html>
+
+<script>
+
+  var openBtn = document.querySelector('.open-btn');
+  var closeBtn = document.querySelector('.close-btn');
+  var popup = document.querySelector('.popup');
+  var video = document.querySelector('#popup-video');
+
+  openBtn.addEventListener('click', () => {
+    popup.style.display = 'block';
+    video.play();
+  });
+
+  closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+    video.pause();
+  });
+
+</script>

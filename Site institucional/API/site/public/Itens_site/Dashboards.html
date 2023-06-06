@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Spiderverse | Dashboards</title>
+
+  <script src="./js/funcoes.js"></script>
+
+  <link rel="icon" href="../assets/img/logo3.png">
+  <link rel="stylesheet" href="../css/dashboards-style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+
+<body onload="obterDadosGrafico()">
+
+  <div class="header">
+    <div id="menu" class="hero-container">
+      <a href="Home.html"><img class="hero glitch layers" src="../assets/img/logo3.png"></a>
+      <h2 class="hero glitch layers"><span>Spider-Verse</span></h2>
+      <ul class="NavBar">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Sobre os Personagens.html">Personagens</a></li>
+        <li><a href="Quiz.html">Quiz</a></li>
+        <li><a class="underline" href="Dashboards.html">Dashboards</a></li>
+        <li class="sair"><a href="../index.html">Logout</a></li>
+        <div class="hello">
+          <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+        </div>
+    </div>
+  </div>
+
+  <div class="banner">
+    <div class="banner-container">
+      <div class="grafico">
+        <h1>Dados do Quiz</h1>
+        <canvas id="myChart"></canvas>
+      </div>
+      <div class="grafico1">
+        <h1>Os aranhas mais populares</h1>
+        <canvas id="myChart1"></canvas>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+
+</html>
+
+<script>
+  b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+
+  function obterDadosGrafico(idQuiz) {
+
+    fetch(`/grafico/ultimas/`, { cache: 'no-store' }).then(function (response) {
+      if (response.ok) {
+        response.json().then(function (resposta) {
+          console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+          // resposta.reverse();
+
+          plotarDadosGrafico(resposta);
+        });
+      } else {
+        console.error('Nenhum dado encontrado ou erro na API');
+      }
+    })
+      .catch(function (error) {
+        console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+      });
+  }
+
+  var cores = ['#8d0000', '#DC0E0C', '#cc3e06e3', 'blueviolet', 'rgba(230, 6, 6, 0.795)', 'black'];
+
+  function plotarDadosGrafico(dados) {
+
+    var data = [];
+    var labels = [];
+
+
+    for (var i = 0; i < dados.length; i++) {
+      data.push(dados[i].quantidade);
+      labels.push(`${dados[i].personagem}`);
+    }
+    // ${plural ? "pessoas" : "pessoa"}
+
+    const ctx = document.getElementById('myChart');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [{
+          data,
+          label: 'Quantidade',
+          fill: true,
+          backgroundColor: cores,
+          borderWidth: 1,
+          tension: 0.1
+        }]
+      },
+      options: {
+        options: {
+          scales: {} // Define as escalas vazias
+        }
+      }
+    });
+  }
+
+  const ctx2 = document.getElementById('myChart1');
+
+  new Chart(ctx2, {
+    type: 'bar',
+    data: {
+      labels: ['Kaine', 'Peter Porker', 'Capitão Aranha Britânia', 'Gwen Stacy', 'Aranha Superior', 'Miles Morales'],
+      datasets: [{
+        backgroundColor: cores,
+        label: 'Popularidade',
+        data: [27, 24, 22, 24, 20, 30],
+        borderWidth: 1
+      }]
+    }
+
+  });
+
+
+</script>
